@@ -1,0 +1,165 @@
+*,
+::after,
+::before,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    text-align: center;
+    background-color: rgb(11, 11, 70);
+    padding: 0.5em;
+}
+
+.nav p {
+    text-transform: uppercase;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.container-left li {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.container-left a {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    color: rgb(11, 11, 70);
+}
+
+.container-left a:hover {
+    color: blue;
+}
+
+.container-img img {
+    width: auto;
+    height: 70px;
+}
+
+.container-right li {
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+
+}
+
+.container-right li:hover {
+    color: blue;
+}
+
+.product {
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1.5em;
+    padding-right: 20em;
+}
+
+.product-img img {
+    width: 400px;
+    height: 400px;
+}
+
+
+.product-details h1 {
+    color: rgb(0, 43, 92);
+}
+
+.product-review i {
+    padding-top: 1em;
+    color: rgb(64, 64, 255);
+}
+
+.product-details h4 {
+    color: rgb(202, 17, 17);
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding-top: 0.5em;
+}
+
+.product-details h4 span {
+    color: gray;
+    text-transform: lowercase;
+}
+
+.product-details h3 {
+    padding-top: 0.5em;
+    color: rgb(202, 17, 17);
+    font-weight: 100px;
+}
+
+.product-details h3 span {
+    color: grey;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.product-details span {
+    color: gray;
+    font-size: 15px;
+}
+
+.product-details h5 {
+    padding-top: 0.5em;
+    color: Black;
+    font-size: 15px;
+}
+
+.product-details-img img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid rgb(64, 64, 255);
+}
+
+.product-size {
+    display: grid;
+    text-align: center;
+    height: 25px;
+    width: 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px 5px;
+    color: whitesmoke;
+    padding-bottom: 1.5em;
+
+}
+
+.product-size > p{
+    background-color: gray;
+    text-transform: uppercase;
+    padding-top: 0.2em;
+    cursor: pointer;
+}
+
+.product-bag .bag{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    padding-top: 0.5em;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    background: rgb(0, 43, 92);
+    border: none;
+}
+
+.product-bag .buy{
+    margin-top: 0.5em;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    padding-top: 0.5em;
+    cursor: pointer;
+    color: rgb(0, 43, 92);
+    background: white;
+}
