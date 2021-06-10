@@ -122,6 +122,24 @@ h4 {
     border: 2px solid rgb(64, 64, 255);
 }
 
+.color{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-quantity{
+    color: rgb(0, 43, 92);
+}
+
+.product-quantity i{
+    padding-top: 0.5em;
+}
+
+.product-quantity input{
+    width: 2em;
+}
+
+
 .product-size {
     display: grid;
     text-align: center;
@@ -150,7 +168,6 @@ h4 {
     color: white;
     text-transform: uppercase;
     background: rgb(0, 43, 92);
-    border: none;
 }
 
 .product-bag .buy{
