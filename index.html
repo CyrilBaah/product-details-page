@@ -49,7 +49,7 @@
                 <i class="fas fa-star-half"></i> <span>6 Reviews</span>
             </div>
             <h4>Free ground shipping <span>on all orders over $125</span> </h4>
-            <h3>$70.99 <span>$80.50</span></h3>
+            <h3>$70 <span>$80.50</span></h3>
             <span>21% off</span>
             <div class="color">
                 <div class="product-details-img">
@@ -59,7 +59,7 @@
                 <div class="product-quantity">
                     <h5>Quantity: <span id="selectedQuantity">Select Quantity</span></h5>
                     <i class="fas fa-minus-circle" id="decreaseQuantity" onclick="decreaseQuantity()"></i>
-                    <input type="number" name="" id="quantity" min="1" value="5">
+                    <input type="number" name="" id="quantity" min="1" value="1">
                     <i class="fas fa-plus-circle" id="increaseQuantity" onclick="increaseQuantity()"></i>
                 </div>
             </div>
@@ -89,10 +89,10 @@
                 </div>
                 <div class="details">
                     <h5>Classic Fit Jet Set Print Short-Sleeve Shirt in Stretch Cotton</h5>
-                    <p>Price: <span>$70.99</span></p>
+                    <p>Price: <span id="slider-price"></span></p>
                     <p>Color: <span>Jetset - Poolside</span></p>
                     <p>Size: <span>M</span></p>
-                    <p>Quantity: <span>M</span></p>
+                    <p>Quantity: <span id="slider-quantity"></span></p>
 
                 </div>
             </div>
@@ -103,13 +103,13 @@
                     <h5>Cart Total</h5>
                 </div>
                 <div class="total">
-                    <h5>$100</h5>
+                    <h5 id="cart-total"></h5>
                 </div>
             </div>
 
             <div class="product-button">
-                <button><a href="cart.html">Checkout</a></button>
-                <button><a href="#">Continue Shopping</a></button>
+                <a href="cart.html"><button>Checkout</button></a>
+                <button>Continue Shopping</button>
             </div>
 
         </div>

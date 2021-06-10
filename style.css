@@ -262,12 +262,15 @@ h4 {
 
 .product-button {
     padding: 2em;
+    /* color: red; */
 }
 
-.product-button button a {
+/* .product-button button a {
     text-decoration: none;
     color: white;
-}
+    background-color: red;
+    width: auto;
+} */
 
 .product-button button {
     width: 20em;
