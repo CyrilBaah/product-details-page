@@ -57,10 +57,10 @@
                     <img src="./img/2.jpg" alt="shirt">
                 </div>
                 <div class="product-quantity">
-                    <h5>Quantity: <span>Select Quantity</span></h5>
-                    <i class="fas fa-minus-circle" id="minus" onclick="subtract()"></i>
-                    <input type="number" name="" id="quantity" min="1" max="10.0" step="1.0" value="1">
-                    <i class="fas fa-plus-circle" id="plus" onclick="add()"></i>
+                    <h5>Quantity: <span id="selectedQuantity">Select Quantity</span></h5>
+                    <i class="fas fa-minus-circle" id="decreaseQuantity" onclick="decreaseQuantity()"></i>
+                    <input type="number" name="" id="quantity" min="1" value="5">
+                    <i class="fas fa-plus-circle" id="increaseQuantity" onclick="increaseQuantity()"></i>
                 </div>
             </div>
             <h5>Size: <span>select a size</span></h5>

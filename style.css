@@ -133,10 +133,11 @@ h4 {
 
 .product-quantity i {
     padding-top: 0.5em;
+    cursor: pointer;
 }
 
 .product-quantity input {
-    width: 2em;
+    width: 3em;
 }
 
 .product-size {
