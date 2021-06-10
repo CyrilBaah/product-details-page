@@ -122,23 +122,22 @@ h4 {
     border: 2px solid rgb(64, 64, 255);
 }
 
-.color{
+.color {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.product-quantity{
+.product-quantity {
     color: rgb(0, 43, 92);
 }
 
-.product-quantity i{
+.product-quantity i {
     padding-top: 0.5em;
 }
 
-.product-quantity input{
+.product-quantity input {
     width: 2em;
 }
-
 
 .product-size {
     display: grid;
@@ -152,14 +151,14 @@ h4 {
 
 }
 
-.product-size > p{
+.product-size>p {
     background-color: gray;
     text-transform: uppercase;
     padding-top: 0.2em;
     cursor: pointer;
 }
 
-.product-bag .bag{
+.product-bag .bag {
     width: 300px;
     height: 30px;
     text-align: center;
@@ -170,7 +169,7 @@ h4 {
     background: rgb(0, 43, 92);
 }
 
-.product-bag .buy{
+.product-bag .buy {
     margin-top: 0.5em;
     width: 300px;
     height: 30px;
@@ -179,4 +178,102 @@ h4 {
     cursor: pointer;
     color: rgb(0, 43, 92);
     background: white;
+}
+
+.product-slider {
+    width: 0em;
+    position: fixed;
+    z-index: 1;
+    height: auto;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 0.5em;
+}
+
+.product-slider .header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(11, 11, 70);
+    color: white;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.product-slider a {
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    font-size: 20px;
+}
+
+.product-slider a:hover {
+    color: rgb(10, 10, 26);
+}
+
+.slider-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    gap: 0.3em;
+    padding: 0.5em;
+}
+
+.slider-item .img img {
+    width: 150px;
+    height: 150px;
+}
+
+.slider-item .details h5 {
+    color: rgb(0, 43, 92);
+}
+
+.slider-item .details p {
+    margin-top: 0.5em;
+    color: rgb(0, 43, 92);
+}
+
+.product-slider hr {
+    border: 0.5px solid gray;
+    width: auto;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: rgb(0, 43, 92);
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.cart-item .title {
+    padding-left: 0.5em;
+}
+
+.cart-item .total h5 {
+    text-align: right;
+}
+
+.product-button {
+    padding: 2em;
+}
+
+.product-button button a {
+    text-decoration: none;
+    color: white;
+}
+
+.product-button button {
+    width: 20em;
+    height: 4em;
+    margin-top: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(0, 43, 92);
+    cursor: pointer;
+
+    /* border: 5px white solid; */
 }

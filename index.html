@@ -64,18 +64,54 @@
                 </div>
             </div>
             <h5>Size: <span>select a size</span></h5>
-           <div class="product-size">
-               <p>xs</p>
-               <p>s</p>
-               <p>m</p>
-               <p>l</p>
-               <p>xl</p>
-               <p>xxl</p>
-           </div>
-           <div class="product-bag">
-               <button class="bag">Add to bag</button>
-               <button class="buy">Buy online, free in-store pickup</button>
-           </div>
+            <div class="product-size">
+                <p>xs</p>
+                <p>s</p>
+                <p>m</p>
+                <p>l</p>
+                <p>xl</p>
+                <p>xxl</p>
+            </div>
+            <div class="product-bag">
+                <button class="bag" onclick="openSlider()">Add to bag</button>
+                <button class="buy">Buy online, free in-store pickup</button>
+            </div>
+        </div>
+
+        <div id="slider" class="product-slider">
+            <div class="header">
+                <p>Item added to Cart</p>
+                <a href="#" onclick="closeSlider()">x</a>
+            </div>
+            <div class="slider-item">
+                <div class="img">
+                    <img src="./img/shirt.jpg" alt="Shirt">
+                </div>
+                <div class="details">
+                    <h5>Classic Fit Jet Set Print Short-Sleeve Shirt in Stretch Cotton</h5>
+                    <p>Price: <span>$70.99</span></p>
+                    <p>Color: <span>Jetset - Poolside</span></p>
+                    <p>Size: <span>M</span></p>
+                    <p>Quantity: <span>M</span></p>
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="cart-item">
+                <div class="title">
+                    <h5>Cart Total</h5>
+                </div>
+                <div class="total">
+                    <h5>$100</h5>
+                </div>
+            </div>
+
+            <div class="product-button">
+                <button><a href="#">Checkout</a></button>
+                <button><a href="#">Continue Shopping</a></button>
+            </div>
+
         </div>
 
     </div>
