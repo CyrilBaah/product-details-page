@@ -181,7 +181,7 @@ h4 {
 }
 
 .product-slider {
-    width: 20em;
+    width: 0em;
     position: fixed;
     z-index: 1;
     height: auto;
