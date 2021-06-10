@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <p>100+ New Markdowns Added! Up To 50% Off All Sale Styles! Shop Now</p>
+    </div>
+    <div class="container">
+        <ul class="container-left">
+            <li>
+                <a href="#">Find a Store </a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+
+        <div class="container-img">
+            <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+        </div>
+
+        <ul class="container-right">
+            <li>Welcome, Sign in</li>
+            <li><a href="cart.html">🛒</a><span id="cart-count">1</span></li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="cart">
+        <div class="cart-body">
+            <div class="cart-header">
+                <h4>Item</h4>
+                <h4>Item Description</h4>
+                <h4>Quantity</h4>
+                <h4>Unit Price</h4>
+                <h4>Total Price</h4>
+                <h4>Action</h4>
+            </div>
+            <div class="cart-detail">
+                <img src="./img/shirt.jpg" alt="shirt">
+                <div class="desc">
+                    <p>Harbor Margo Shirt Dress</p>
+                    <p>Color: <span id="cart-color"> rewj</span></p>
+                    <p>Size: <span id="cart-size">skb</span></p>
+                </div>
+                <div>
+                    <input type="number" id="numberField" min="1" max="10.0" step="1.0" value="1">
+                    <input type="button" value="Update" onclick="updateQuantity()">
+                </div>
+                <p>$148.00</p>
+                <p><span>$100</span></p>
+                <p><i class="fas fa-trash"></i></p>
+            </div>
+        </div>
+
+        <div class="checkout">
+            <div class="checkout-header">
+                <h4>Order Summary</h4>
+            </div>
+            <div class="checkout-detail">
+                <p>Subtotal: <span>$100</span></p>
+                <p>Discount: <span>$0</span></p>
+                <p>Total: <span>$100</span></p>
+
+                <div class="discount">
+                    <h4>Apply Discount Coupon</h4>
+                    <input type="text" name="" id="coupon" maxlength="5">
+                    <input type="button" value="Apply Coupon">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
