@@ -5,6 +5,15 @@ closeSlider = () => {
     document.getElementById('slider').style.width = 0;
 }
 
+// LocalStorage
+
+let productDetails = {
+    quantity: 0,
+    image: "",
+    size: "",
+    color: "",
+}
+
 selectedItems = () => {
     let selectedQuantity = parseInt(document.getElementById('quantity').value);
     let cartTotal = document.getElementById('slider-price').innerHTML = selectedQuantity * 70;
@@ -20,6 +29,14 @@ selectedItems = () => {
     document.getElementById('slider-color').innerHTML = selectedProductColor;
     document.getElementById('slider-size').innerHTML = selectedProductSize;
     document.getElementById('selectedSize').innerHTML = selectedProductSize;
+
+    productDetails.quantity = selectedQuantity;
+    productDetails.image = document.getElementById('product-image').src;
+    productDetails.size = selectedProductSize;
+    productDetails.color = selectedProductColor;
+
+    localStorage.setItem('selectedProductDetails', JSON.stringify(productDetails));
+
 }
 
 openSlider = () => {
