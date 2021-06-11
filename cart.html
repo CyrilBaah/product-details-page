@@ -46,18 +46,18 @@
                 <h4>Action</h4>
             </div>
             <div class="cart-detail">
-                <img src="./img/shirt.jpg" alt="shirt">
+                <img src="" alt="shirt" id="cart-productimage">
                 <div class="desc">
-                    <p>Shirt in Stretch Cotton</p>
-                    <p>Color: <span id="cart-color"> rewj</span></p>
-                    <p>Size: <span id="cart-size">skb</span></p>
+                    <p id="cart-productname"></p>
+                    <p>Color: <span id="cart-productcolor"></span></p>
+                    <p>Size: <span id="cart-productsize"></span></p>
                 </div>
                 <div>
-                    <input type="number" id="numberField" min="1" max="10.0" step="1.0" value="1">
+                    <input type="number" id="cart-productquantity" min="1" max="10.0" step="1.0" value="1">
                     <input type="button" value="Update" onclick="updateQuantity()">
                 </div>
-                <p>$148.00</p>
-                <p><span>$100</span></p>
+                <p>$ <span id="cart-unitprice"></span></p>
+                <p>$<span id="cart-totalprice"></span></p>
                 <p><i class="fas fa-trash"></i></p>
             </div>
         </div>
@@ -80,7 +80,7 @@
         </div>
     </div>
     </div>
-    <script src="app.js"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>

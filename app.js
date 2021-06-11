@@ -1,6 +1,5 @@
 let quantityValue = parseInt(document.getElementById('quantity').value);
 
-
 closeSlider = () => {
     document.getElementById('slider').style.width = 0;
 }
@@ -8,10 +7,11 @@ closeSlider = () => {
 // LocalStorage
 
 let productDetails = {
+    name: '',
     quantity: 0,
-    image: "",
-    size: "",
-    color: "",
+    image: '',
+    size: '',
+    color: '',
 }
 
 selectedItems = () => {
@@ -30,6 +30,7 @@ selectedItems = () => {
     document.getElementById('slider-size').innerHTML = selectedProductSize;
     document.getElementById('selectedSize').innerHTML = selectedProductSize;
 
+    productDetails.name = selectedProductName;
     productDetails.quantity = selectedQuantity;
     productDetails.image = document.getElementById('product-image').src;
     productDetails.size = selectedProductSize;
