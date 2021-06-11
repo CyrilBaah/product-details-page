@@ -45,7 +45,7 @@
                 <h4>Total Price</h4>
                 <h4>Action</h4>
             </div>
-            <div class="cart-detail">
+            <div class="cart-detail" id="cart-delete">
                 <img src="" alt="shirt" id="cart-productimage">
                 <div class="desc">
                     <p id="cart-productname"></p>
@@ -58,7 +58,7 @@
                 </div>
                 <p>$ <span id="cart-unitprice"></span></p>
                 <p>$<span id="cart-totalprice"></span></p>
-                <p><i class="fas fa-trash"></i></p>
+                <p><i class="fas fa-trash" onclick="deleteCart()"></i></p>
             </div>
         </div>
 
@@ -67,9 +67,9 @@
                 <h4>Order Summary</h4>
             </div>
             <div class="checkout-detail">
-                <p>Subtotal: <span>$100</span></p>
+                <p>Subtotal: $<span id="checkout-subtotal"></span></p>
                 <p>Discount: <span>$0</span></p>
-                <p>Total: <span>$100</span></p>
+                <p>Total: $<span id="checkout-total">8</span></p>
 
                 <div class="discount">
                     <h4>Apply Discount Coupon</h4>
