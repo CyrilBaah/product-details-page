@@ -28,16 +28,22 @@ updatePrice = (value) => {
 
 updateQuantity = () => {
     let productQuantity = document.getElementById('cart-productquantity').value;
+    document.getElementById('checkout-discount').innerHTML = 0;
+    document.getElementById('checkout-marquee').innerHTML = "";
+    document.getElementById('coupon').value = "";
+
     updatePrice(productQuantity);
 }
 
 deleteCart = () => {
     document.getElementById('cart-delete').remove();
+    document.getElementById('checkout-discount').innerHTML = "";
+    document.getElementById('checkout-subtotal').innerHTML = "";
+    document.getElementById('checkout-total').innerHTML = "";
 
 }
 
 discountCoupon = (code) => {
-    const productPrice = 70;
     const codeTwentyPercent = "20Percent%";
     const codeThirtyPercent = "30Percent%";
     const codeFortyPercent = "40Percent%";
@@ -48,38 +54,39 @@ discountCoupon = (code) => {
     const codeFortyPercentValue = 0.4;
     const codeFiftyPercentValue = 0.5;
 
-    const codeTwentyPercentAmount = productPrice * codeTwentyPercentValue;
-    const codeThirtyPercentAmount = productPrice * codeThirtyPercentValue;
-    const codeFortyPercentAmount = productPrice * codeFortyPercentValue;
-    const codeFiftyPercentAmount = productPrice * codeFiftyPercentValue;
+    let subTotal = document.getElementById('checkout-subtotal').innerHTML;
+    let twentyTotal = subTotal - (subTotal * codeTwentyPercentValue);
+    let thirtyTotal = subTotal - (subTotal * codeThirtyPercentValue);
+    let fortyTotal = subTotal - (subTotal * codeFortyPercentValue);
+    let fiftyTotal = subTotal - (subTotal * codeFiftyPercentValue);
 
     switch (code) {
         case codeTwentyPercent:
-            document.getElementById('checkout-subtotal').innerHTML = codeTwentyPercentAmount;
+            document.getElementById('checkout-subtotal').innerHTML = subTotal;
             document.getElementById('checkout-discount').innerHTML = "20%";
-            document.getElementById('checkout-total').innerHTML = codeTwentyPercentAmount;
-            document.getElementById('checkout-marquee').innerHTML = `<marquee direction="">Amount to be paid is $${codeTwentyPercentAmount}</marquee>`;
+            document.getElementById('checkout-total').innerHTML = twentyTotal;
+            document.getElementById('checkout-marquee').innerHTML = `<marquee direction="">Amount to be paid is $${twentyTotal}</marquee>`;
             break;
 
         case codeThirtyPercent:
-            document.getElementById('checkout-subtotal').innerHTML = codeThirtyPercentAmount;
+            document.getElementById('checkout-subtotal').innerHTML = subTotal;
             document.getElementById('checkout-discount').innerHTML = "30%";
-            document.getElementById('checkout-total').innerHTML = codeThirtyPercentAmount;
-            document.getElementById('checkout-marquee').innerHTML = `<marquee direction="">Amount to be paid is $${codeThirtyPercentAmount}</marquee>`;
+            document.getElementById('checkout-total').innerHTML = thirtyTotal;
+            document.getElementById('checkout-marquee').innerHTML = `<marquee direction="">Amount to be paid is $${thirtyTotal}</marquee>`;
             break;
 
         case codeFortyPercent:
-            document.getElementById('checkout-subtotal').innerHTML = codeFortyPercentAmount;
+            document.getElementById('checkout-subtotal').innerHTML = subTotal;
             document.getElementById('checkout-discount').innerHTML = "40%";
-            document.getElementById('checkout-total').innerHTML = codeFortyPercentAmount;
-            document.getElementById('checkout-marquee').innerHTML = `<marquee direction="">Amount to be paid is $${codeFortyPercentAmount}</marquee>`;
+            document.getElementById('checkout-total').innerHTML = fortyTotal;
+            document.getElementById('checkout-marquee').innerHTML = `<marquee direction="">Amount to be paid is $${fortyTotal}</marquee>`;
             break;
 
         case codeFiftyPercent:
-            document.getElementById('checkout-subtotal').innerHTML = codeFiftyPercentAmount;
+            document.getElementById('checkout-subtotal').innerHTML = subTotal;
             document.getElementById('checkout-discount').innerHTML = "50%";
-            document.getElementById('checkout-total').innerHTML = codeFiftyPercentAmount;
-            document.getElementById('checkout-marquee').innerHTML = `<marquee direction="">Amount to be paid is $${codeFiftyPercentAmount}</marquee>`;
+            document.getElementById('checkout-total').innerHTML = fiftyTotal;
+            document.getElementById('checkout-marquee').innerHTML = `<marquee direction="">Amount to be paid is $${fiftyTotal}</marquee>`;
             break;
 
         default:
